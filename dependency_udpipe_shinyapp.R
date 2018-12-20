@@ -4,9 +4,10 @@ if (!require(lattice)){install.packages("lattice")}
 if (!require(igraph)){install.packages("igraph")}
 if (!require(ggraph)){install.packages("ggraph")}
 if (!require(wordcloud)){install.packages("wordcloud")}
-if (!require(wordcloud)){install.packages("tm")}
-if (!require("shinycssloaders")){install.packages("shinycssloaders")}
-if (!require("rvest")){install.packages("rvest")}
+if (!require(tm)){install.packages("tm")}
+if (!require(shinycssloaders)){install.packages("shinycssloaders")}
+if (!require(rvest)){install.packages("rvest")}
+if (!require(shiny)){install.packages("shiny")}
 
 library(tm)
 library(shiny)
