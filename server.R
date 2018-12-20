@@ -6,7 +6,7 @@ shinyServer(function(input, output,session) {
   set.seed=0000000   
   options(shiny.maxRequestSize=30*1024^2)
   
-  windowsFonts(devanew=windowsFont("Devanagari new normal")) 
+  tryCatch(windowsFonts(devanew=windowsFont("Devanagari new normal")))
   
   dataset <- reactive({
     if (is.null(input$file)) {return(NULL)}
