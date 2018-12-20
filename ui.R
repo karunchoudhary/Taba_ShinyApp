@@ -87,8 +87,8 @@ shinyUI(fluidPage(
                         # verbatimTextOutput("event")
                         ), 
               
-                tabPanel("Word Cloud",h4("Word Cloud"),
-                              plotOutput("wordcloud",width = "100%" ,height= "800px")),
+                tabPanel("Word Cloud",h4("Word Cloud"),wellPanel(withSpinner( plotOutput("wordcloud",width = "100%" ,height= "800px")))),
+                            #  plotOutput("wordcloud",width = "100%" ,height= "800px")),
 
                 tabPanel("Co-occurrence plot of seleted XPOS's",
                          wellPanel(withSpinner( plotOutput("wordcoocc"))))
