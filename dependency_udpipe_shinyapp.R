@@ -8,6 +8,8 @@ if (!require(tm)){install.packages("tm")}
 if (!require(shinycssloaders)){install.packages("shinycssloaders")}
 if (!require(rvest)){install.packages("rvest")}
 if (!require(shiny)){install.packages("shiny")}
+if (!require(ggplot2)){install.packages("ggplot2")}
+if (!require(stringr)){install.packages("stringr")}
 
 library(tm)
 library(shiny)
@@ -19,6 +21,5 @@ library(ggraph)
 library(ggplot2)
 library(wordcloud)
 library(stringr)
-library(wordcloud)
 library(shinycssloaders)
 library(rvest)
