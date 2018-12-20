@@ -119,7 +119,7 @@ output$downloadData1 <- downloadHandler(
   
   content = function(file) {
     
-    writeLines(readLines("data/Nokia_Lumia_reviews.txt"), file)
+    writeLines(readLines("data/amazon_nokia_lumia_reviews.txt"), file)
     
   }
   
