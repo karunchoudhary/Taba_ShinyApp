@@ -6,7 +6,7 @@ shinyServer(function(input, output,session) {
   set.seed=0000000   
   options(shiny.maxRequestSize=30*1024^2)
   
-  tryCatch(windowsFonts(devanew=windowsFont("Devanagari new normal")))
+  tryCatch(windowsFonts(devanew=windowsFont("Devanagari new normal")),error=function(e)print("windowsFonts not supporting in MAC"))
   
   dataset <- reactive({
     if (is.null(input$file)) {return(NULL)}
